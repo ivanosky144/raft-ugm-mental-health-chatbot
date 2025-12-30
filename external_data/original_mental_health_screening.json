@@ -1,0 +1,438 @@
+[
+    {
+        "key": 1,
+        "section": "Depression",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Tidak pernah"
+            },
+            {
+                "score": 2,
+                "description": "Jarang"
+            },
+            {
+                "score": 3,
+                "description": "Kadang-kadang"
+            },
+            {
+                "score": 4,
+                "description": "Sering"
+            },
+            {
+                "score": 5,
+                "description": "Selalu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 1, "section": "Depression", "question": "Saya merasa tidak berguna" },
+            { "question_key": 2, "section": "Depression", "question": "Saya merasa tidak memiliki apa-apa untuk diharapkan" },
+            { "question_key": 3, "section": "Depression", "question": "Saya merasa tidak berdaya" },
+            { "question_key": 4, "section": "Depression", "question": "Saya merasa sedih" },
+            { "question_key": 5, "section": "Depression", "question": "Saya merasa seperti seorang yang gagal" },
+            { "question_key": 6, "section": "Depression", "question": "Saya merasa tertekan" },
+            { "question_key": 7, "section": "Depression", "question": "Saya merasa tidak bahagia" },
+            { "question_key": 8, "section": "Depression", "question": "Saya merasa putus asa" }
+        ]
+    },
+    {
+        "key": 2,
+        "section": "Anger",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Tidak pernah"
+            },
+            {
+                "score": 2,
+                "description": "Jarang"
+            },
+            {
+                "score": 3,
+                "description": "Kadang-kadang"
+            },
+            {
+                "score": 4,
+                "description": "Sering"
+            },
+            {
+                "score": 5,
+                "description": "Selalu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 9, "section": "Anger", "question": "Saya merasa jengkel melebihi yang orang lain ketahui" },
+            { "question_key": 10, "section": "Anger", "question": "Saya merasa marah" },
+            { "question_key": 11, "section": "Anger", "question": "Saya merasa bahwa saya siap meledakan emosi" },
+            { "question_key": 12, "section": "Anger", "question": "Saya merasa kesal" },
+            { "question_key": 13, "section": "Anger", "question": "Saya merasa terganggu" }
+        ]
+    },
+    {
+        "key": 3,
+        "section": "Mania",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Tidak pernah"
+            },
+            {
+                "score": 2,
+                "description": "Jarang"
+            },
+            {
+                "score": 3,
+                "description": "Kadang-kadang"
+            },
+            {
+                "score": 4,
+                "description": "Sering"
+            },
+            {
+                "score": 5,
+                "description": "Selalu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 14, "section": "Mania", "question": "Saya merasa lebih bahagia atau lebih ceria dari biasanya." },
+            { "question_key": 15, "section": "Mania", "question": "Saya merasa lebih percaya diri dari biasanya." },
+            { "question_key": 16, "section": "Mania", "question": "Saya membutuhkan tidur lebih sedikit dari biasanya." },
+            { "question_key": 17, "section": "Mania", "question": "Saya berbicara lebih dari biasanya." },
+            { "question_key": 18, "section": "Mania", "question": "Saya lebih aktif dari biasanya." }
+        ]
+    },
+    {
+        "key": 4,
+        "section": "Anxiety",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Tidak pernah"
+            },
+            {
+                "score": 2,
+                "description": "Jarang"
+            },
+            {
+                "score": 3,
+                "description": "Kadang-kadang"
+            },
+            {
+                "score": 4,
+                "description": "Sering"
+            },
+            {
+                "score": 5,
+                "description": "Selalu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 19, "section": "Anxiety", "question": "Saya merasa takut." },
+            { "question_key": 20, "section": "Anxiety", "question": "Saya merasa cemas." },
+            { "question_key": 21, "section": "Anxiety", "question": "Saya merasa khawatir." },
+            { "question_key": 22, "section": "Anxiety", "question": "Saya merasa sulit untuk fokus pada hal lain selain kecemasan saya." },
+            { "question_key": 23, "section": "Anxiety", "question": "Saya merasa gugup." },
+            { "question_key": 24, "section": "Anxiety", "question": "Saya merasa tidak nyaman." },
+            { "question_key": 25, "section": "Anxiety", "question": "Saya merasa tegang." }
+        ]
+    },
+    {
+        "key": 5,
+        "section": "Somatic",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Tidak terganggu sama sekali"
+            },
+            {
+                "score": 1,
+                "description": "Sedikit terganggu"
+            },
+            {
+                "score": 2,
+                "description": "Sangat terganggu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 26, "section": "Somatic", "question": "Saya mengalami sakit perut." },
+            { "question_key": 27, "section": "Somatic", "question": "Saya mengalami sakit punggung." },
+            { "question_key": 28, "section": "Somatic", "question": "Saya mengalami sakit di lengan, kaki, atau sendi." },
+            { "question_key": 29, "section": "Somatic", "question": "Saya mengalami keram pada saat menstruasi atau masalah siklus menstruasi." },
+            { "question_key": 30, "section": "Somatic", "question": "Saya mengalami sakit kepala." },
+            { "question_key": 31, "section": "Somatic", "question": "Saya mengalami nyeri di dada." },
+            { "question_key": 32, "section": "Somatic", "question": "Saya mengalami pening." },
+            { "question_key": 33, "section": "Somatic", "question": "Saya pingsan." },
+            { "question_key": 34, "section": "Somatic", "question": "Saya mengalami jantung berdebar-debar." },
+            { "question_key": 35, "section": "Somatic", "question": "Saya mengalami sesak napas" },
+            { "question_key": 36, "section": "Somatic", "question": "Saya mengalami nyeri atau bemasalah saat berhubungan seksual" },
+            { "question_key": 37, "section": "Somatic", "question": "Saya mengalami konstipasi." },
+            { "question_key": 38, "section": "Somatic", "question": "Saya mengalami mual, kembung, atau gangguan pencernaan." },
+            { "question_key": 39, "section": "Somatic", "question": "Saya merasa lelah atau kurang berenergi." },
+            { "question_key": 40, "section": "Somatic", "question": "Saya mengalami kesulitan tidur." }
+        ]
+    },
+    {
+        "key": 6,
+        "section": "Suicidal",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Tidak sedang mengalami pikiran seperti itu"
+            },
+            {
+                "score": 1,
+                "description": "Kadang-kadang memiliki pikiran seperti itu atau sedang memiliki pikiran seperti itu namun masih mampu mengontrol pikiran tersebut"
+            },
+            {
+                "score": 2,
+                "description": "Sering memiliki pikiran seperti itu atau sedang memiliki pikiran seperti itu dan mulai mempertimbangkannya"
+            },
+            {
+                "score": 3,
+                "description": "Selalu memiliki pikiran seperti itu atau sedang memiliki pikiran seperti itu tetapi sudah tidak mampu mengontrolnya"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 41, "section": "Suicidal", "question": "saya memiliki pikiran-pikiran untuk mengakhiri kehidupan saya." },
+            { "question_key": 42, "section": "Suicidal", "question": "saya sedang memiliki pikiran-pikiran tentang bunuh diri, namun saya belum menyusun rencana apa pun." },
+            { "question_key": 43, "section": "Suicidal", "question": "saya sedang memiliki pikiran-pikiran tentang bunuh diri, namun saya sepenuhnya mampu untuk mengontrol pikiran-pikiran tersebut." },
+            { "question_key": 44, "section": "Suicidal", "question": "saya memiliki dorongan untuk mengakhiri kehidupan saya." }
+        ]
+    },
+    {
+        "key": 7,
+        "section": "Psychosis",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Sangat tidak setuju"
+            },
+            {
+                "score": 1,
+                "description": "Tidak setuju"
+            },
+            {
+                "score": 2,
+                "description": "Agak tidak setuju"
+            },
+            {
+                "score": 3,
+                "description": "Ragu-ragu"
+            },
+            {
+                "score": 4,
+                "description": "Agak setuju"
+            },
+            {
+                "score": 5,
+                "description": "Setuju"
+            },
+            {
+                "score": 6,
+                "description": "Sangat setuju"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 45, "section": "Psychosis", "question": "Saya merasa ada hal-hal aneh atau tidak biasa yang terjadi yang tidak dapat saya jelaskan" },
+            { "question_key": 46, "section": "Psychosis", "question": "Saya mungkin bisa memprediksi masa depan" },
+            { "question_key": 47, "section": "Psychosis", "question": "Saya mungkin merasa ada sesuatu yang mengganggu atau mengendalikan pikiran, perasaan, atau tindakan saya" },
+            { "question_key": 48, "section": "Psychosis", "question": "Saya pernah melakukan sesuatu yang tidak biasa dilakukan orang lain karena keyakinan saya akan hal-hal supranatural" },
+            { "question_key": 49, "section": "Psychosis", "question": "Saya kadang-kadang bingung apakah sesuatu yang saya alami atau rasakan mungkin adalah hal yang nyata atau mungkin hanya bagian dari imajinasi atau mimpi saya" },
+            { "question_key": 50, "section": "Psychosis", "question": "Saya berpikir bahwa ada kemungkinan orang lain dapat membaca pikiran saya, atau saya bisa membaca pikiran orang lain" },
+            { "question_key": 51, "section": "Psychosis", "question": "Saya bertanya-tanya apakah orang lain mungkin berencana untuk menyakiti saya atau bahkan mungkin akan menyakiti saya" },
+            { "question_key": 52, "section": "Psychosis", "question": "Saya percaya bahwa saya mempunyai kemampuan alami atau supernatural yang istimewa melebihi bakat dan kekuatan bawaan saya" },
+            { "question_key": 53, "section": "Psychosis", "question": "Saya merasa sedang dipermainkan oleh pikiran saya sendiri" },
+            { "question_key": 54, "section": "Psychosis", "question": "Saya pernah mendengar suara samar-samar (atau jelas) bergumam atau berbicara, ketika tidak ada orang di dekat saya" },
+            { "question_key": 55, "section": "Psychosis", "question": "Saya mendengar pikiran saya sendiri diucapkan dengan lantang" },
+            { "question_key": 56, "section": "Psychosis", "question": "Saya khawatir bahwa saya akan menjadi \"gila”" }
+        ]
+    },
+    {
+        "key": 8,
+        "section": "Sleep Disturbance",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Tidak sama sekali"
+            },
+            {
+                "score": 2,
+                "description": "Sedikit"
+            },
+            {
+                "score": 3,
+                "description": "Bisa dibilang begitu"
+            },
+            {
+                "score": 4,
+                "description": "Cukup sering"
+            },
+            {
+                "score": 5,
+                "description": "Hampir selalu"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 57, "section": "Sleep Disturbance", "question": "tidur saya tidak nyenyak" },
+            { "question_key": 58, "section": "Sleep Disturbance", "question": "tidur saya memuaskan" },
+            { "question_key": 59, "section": "Sleep Disturbance", "question": "tidur saya menyegarkan" },
+            { "question_key": 60, "section": "Sleep Disturbance", "question": "saya mengalami kesulitan tidur" },
+            { "question_key": 61, "section": "Sleep Disturbance", "question": "saya memiliki masalah untuk tetap tidur" },
+            { "question_key": 62, "section": "Sleep Disturbance", "question": "saya memiliki masalah tidur" },
+            { "question_key": 63, "section": "Sleep Disturbance", "question": "saya merasa tidur dengan cukup" }
+        ]
+    },
+    {
+        "key": 9,
+        "section": "Memory",
+        "scoring_system": [
+            {
+                "score": 1,
+                "description": "Sangat tidak setuju"
+            },
+            {
+                "score": 2,
+                "description": "Tidak setuju"
+            },
+            {
+                "score": 3,
+                "description": "Ragu-ragu"
+            },
+            {
+                "score": 4,
+                "description": "Setuju"
+            },
+            {
+                "score": 5,
+                "description": "Sangat setuju"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 64, "section": "Memory", "question": "Secara umum saya merasa senang dengan daya ingatan saya." },
+            { "question_key": 65, "section": "Memory", "question": "Ada sesuatu yang sangat salah terkait ingatan saya." },
+            { "question_key": 66, "section": "Memory", "question": "Jika ada sesuatu yang penting, mungkin saya akan mengingatnya." },
+            { "question_key": 67, "section": "Memory", "question": "Ketika saya lupa akan sesuatu, saya takut saya memiki masalah ingatan yang serius, seperti penyakit Alzheimer’s." },
+            { "question_key": 68, "section": "Memory", "question": "Ingatan saya lebih buruk daripada kebanyakan orang seusia saya." },
+            { "question_key": 69, "section": "Memory", "question": "Saya percaya diri dengan kemampuan saya dalam mengingat sesuatu." },
+            { "question_key": 70, "section": "Memory", "question": "Saya merasa tidak bahagia jika memikirkan tentang daya ingat saya." },
+            { "question_key": 71, "section": "Memory", "question": "Saya khawatir orang lain akan menyadari bahwa ingatan saya tidak begitu bagus." },
+            { "question_key": 72, "section": "Memory", "question": "Ketika saya memiliki masalah dalam mengingat sesuatu, saya bisa memaklumi itu." },
+            { "question_key": 73, "section": "Memory", "question": "Saya memiliki kekhawatiran akan daya ingat saya." },
+            { "question_key": 74, "section": "Memory", "question": "Daya ingat saya sangat menurun akhir-akhir ini." },
+            { "question_key": 75, "section": "Memory", "question": "Secara umum saya merasa puas dengan daya ingat saya." },
+            { "question_key": 76, "section": "Memory", "question": "Saya tidak kesal ketika memiliki masalah dalam mengingat sesuatu." },
+            { "question_key": 77, "section": "Memory", "question": "Saya khawatir saya akan melupakan sesuatu yang penting." },
+            { "question_key": 78, "section": "Memory", "question": "Saya malu akan daya ingat saya." },
+            { "question_key": 79, "section": "Memory", "question": "Saya merasa jengkel atau kesal dengan diri saya sendiri ketika saya lupa." },
+            { "question_key": 80, "section": "Memory", "question": "Daya ingat saya baik untuk seusia saya." },
+            { "question_key": 81, "section": "Memory", "question": "Saya khawatir dengan daya ingat saya." }
+        ]
+    },
+    {
+        "key": 9,
+        "section": "Dissociation",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Tidak pernah sama sekali"
+            },
+            {
+                "score": 1,
+                "description": "Sekali atau dua kali"
+            },
+            {
+                "score": 2,
+                "description": "Hampir setiap hari"
+            },
+            {
+                "score": 3,
+                "description": "Kira-kira sekali sehari"
+            },
+            {
+                "score": 4,
+                "description": "Lebih dari sekali sehari"
+            }
+        ],
+        "questions_list": [
+            { "question_key": 82, "section": "Dissociation", "question": "Saya mendapati diri saya melamun dan tidak memikirkan apa pun." },
+            { "question_key": 83, "section": "Dissociation", "question": "Orang-orang, benda-benda, atau dunia di sekitar saya tampak aneh atau tidak nyata." },
+            { "question_key": 84, "section": "Dissociation", "question": "Saya mendapati diri saya melakukan hal-hal yang saya tidak ingat pernah melakukannya." },
+            { "question_key": 85, "section": "Dissociation", "question": "Ketika sedang sendirian, saya berbicara dengan bersuara pada diri saya sendiri." },
+            { "question_key": 86, "section": "Dissociation", "question": "Saya merasa seolah-olah saya sedang melihat melalui kabut sehingga orang-orang dan benda-benda tampak jauh atau tidak jelas." },
+            { "question_key": 87, "section": "Dissociation", "question": "Saya mampu mengabaikan rasa sakit." },
+            { "question_key": 88, "section": "Dissociation", "question": "Saya bertindak sangat berbeda dari satu situasi ke situasi lainnya sehingga seolah-olah saya adalah dua orang yang berbeda." },
+            { "question_key": 89, "section": "Dissociation", "question": "Saya dengan mudah melakukan hal-hal yang biasanya sulit bagi saya." }
+        ]
+    },
+    {
+        "key": 10,
+        "section": "Substance Use",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Tidak pernah sama sekali"
+            },
+            {
+                "score": 1,
+                "description": "Sekali atau dua kali"
+            },
+            {
+                "score": 2,
+                "description": "Hampir setiap hari"
+            },
+            {
+                "score": 3,
+                "description": "Kira-kira sekali sehari"
+            },
+            {
+                "score": 4,
+                "description": "Lebih dari sekali sehari"
+            }
+        ],
+        "questions_list": [
+            { "key": 90, "section": "Substance Use", "question": "Saya menggunakan penghilang rasa sakit (cont: Vicodin)." },
+            { "key": 91, "section": "Substance Use", "question": "Saya menggunakan stimulan (cont: Ritalin, Adderall)." },
+            { "key": 92, "section": "Substance Use", "question": "Saya menggunakan obat bius atau penenang (cont: obat tidur atau Valium)" },
+            { "key": 93, "section": "Substance Use", "question": "Saya menggunakan ganja." },
+            { "key": 94, "section": "Substance Use", "question": "Saya menggunakan kokain." },
+            { "key": 95, "section": "Substance Use", "question": "Saya menggunakan obat untuk kesenangan (cont: ekstasi)." },
+            { "key": 96, "section": "Substance Use", "question": "Saya menggunakan halusinogen (cont: LSD)." },
+            { "key": 97, "section": "Substance Use", "question": "Saya menggunakan heroin" },
+            { "key": 98, "section": "Substance Use", "question": "Saya menggunakan inhalants atau solvents (cont: lem)." },
+            { "key": 99, "section": "Substance Use", "question": "Saya menggunakan metamfetamin." }
+        ]
+    },
+    {
+        "key": 11,
+        "section": "Repetitive Thought",
+        "scoring_system": [
+            {
+                "score": 0,
+                "description": "Tidak pernah sama sekali atau masih terkontrol sepenuhnya"
+            },
+            {
+                "score": 1,
+                "description": "Sesekali atau sedikit mengganggu atau kurang dari 1 jam tiap harinya"
+            },
+            {
+                "score": 2,
+                "description": "Beberapa kali atau terkadang masih bisa mengontrol atau 1 sampai 3 jam per hari"
+            },
+            {
+                "score": 3,
+                "description": "Sering atau sangat mengganggu atau 3 sampai 8 jam per hari"
+            },
+            {
+                "score": 4,
+                "description": "Selalu atau tak terkendali atau lebih dari 8 jam per hari"
+            }
+        ],
+        "questions_list": [
+            { "key": 100, "section": "Repetitive Thought", "question": "Tiap harinya rata-rata (dalam hitungan jam) seberapa sering Anda mengalami perilaku atau pikiran tersebut?" },
+            { "key": 101, "section": "Repetitive Thought", "question": "Seberapa parahkah perilaku atau pikiran ini mengganggu Anda?" },
+            { "key": 102, "section": "Repetitive Thought", "question": "Bagi Anda, seberapa sulit untuk mengontrol pikiran atau perilaku tersebut?" },
+            { "key": 103, "section": "Repetitive Thought", "question": "Seberapa sering pikiran dan perilaku ini membuat Anda menghindari untuk melakukan hal tertentu, mengunjungi tempat atau bersama orang tertentu?" },
+            { "key": 104, "section": "Repetitive Thought", "question": "Seberapa sering pikiran atau perilaku ini mempengaruhi sekolah, pekerjaan, hubungan sosial dan kehidupan keluarga?" }
+        ]
+    }
+]

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block body %}
+<link rel="stylesheet" href="{{ url_for('web.static', filename='css/auth.css') }}">
+
+<div class="auth-page">
+    <div class="auth-card">
+        <h2 class="auth-title">Masuk — Chatbot Kesehatan Mental</h2>
+
+        <div id="message-box" class="auth-error" style="display: none; padding: 10px; margin-bottom: 15px; border-radius: 4px;"></div>
+
+        <form id="login-form" class="auth-form">
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Kata Sandi" required>
+            <button type="submit" id="submit-btn">Masuk</button>
+        </form>
+
+        <div class="auth-bottom">
+            Belum punya akun? <a href="/register">Daftar</a>
+        </div>
+    </div>
+</div>
+
+<script src="{{ url_for('web.static', filename='js/login.js') }}"></script>
+{% endblock %}

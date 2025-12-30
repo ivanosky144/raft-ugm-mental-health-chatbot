@@ -1,0 +1,1654 @@
+[
+  {
+    "dialog_id": 1,
+    "name": "Rizki Pratama",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Rizki, terima kasih sudah meluangkan waktu hari ini. Sebelum kita mulai, saya ingin menegaskan bahwa semua jawabanmu akan dijaga kerahasiaannya dan digunakan semata-mata untuk memahami kondisimu lebih baik. Rizki, bagaimana perasaanmu hari ini secara umum?"
+      }
+    ]
+  },
+  {
+    "dialog_id": 2,
+    "name": "Dewi Lestari",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Dewi, terima kasih sudah melanjutkan dengan sesi ini. Saya ingin mulai dengan membicarakan pola tidurmu. Bagaimana kamu menilai kualitas tidurmu akhir-akhir ini? Apakah kamu merasa tidurmu nyenyak dan cukup menyegarkan?"
+      },
+      {
+        "role": "user",
+        "content": "Aku merasa tidurku agak terganggu, sering terbangun di malam hari. Jadi, ya, nggak terlalu nyenyak dan kurang menyegarkan."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "tidur saya tidak nyenyak",
+            "score": 4
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa puas dengan kualitas tidurmu secara keseluruhan?"
+      },
+      {
+        "role": "user",
+        "content": "Bisa dibilang tidak puas, karena sering merasa lelah saat bangun."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "tidur saya memuaskan",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah tidurmu memberikan efek menyegarkan sehingga kamu merasa bertenaga di pagi hari?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak terlalu, biasanya aku masih merasa lelah dan kurang semangat di pagi hari."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "tidur saya menyegarkan",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Saat mencoba untuk tidur, apakah kamu sering mengalami kesulitan untuk mulai tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, seringkali aku terjaga di atas kasur tapi pikiranku terus berputar sehingga sulit untuk tertidur."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "saya mengalami kesulitan tidur",
+            "score": 4
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Setelah kamu berhasil tertidur, apakah kamu sering terbangun di malam hari dan kesulitan untuk tidur kembali?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, aku sering terbangun di malam hari dan kadang kesulitan untuk tidur lagi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "saya memiliki masalah untuk tetap tidur",
+            "score": 4
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Secara umum, apakah kamu merasa memiliki masalah tidur akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, aku merasa ini cukup mengganggu keseharianku."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "saya memiliki masalah tidur",
+            "score": 4
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa tidurmu sudah cukup dari segi durasi?"
+      },
+      {
+        "role": "user",
+        "content": "Meskipun aku berusaha tidur cukup lama, tapi tetap merasa kurang karena kualitasnya kurang baik."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Sleep Disturbance",
+            "survey_question": "saya merasa tidur dengan cukup",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah berbagi tentang tidurmu. Sekarang, mari kita bicarakan tentang pengalaman melamun atau merasa terlepas dari kenyataan. Apakah kamu pernah merasa seperti sedang melamun tanpa memikirkan apa pun?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, aku sering merasa seperti melamun, terutama saat suasana hatiku sedang berubah atau aku butuh waktu untuk menyendiri dan merenung."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya mendapati diri saya melamun dan tidak memikirkan apa pun.",
+            "score": 3
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah melakukan sesuatu tapi kemudian sulit mengingat bahwa kamu benar-benar melakukannya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang iya, terutama saat aku merasa seperti berjalan otomatis, tapi itu jarang terjadi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya mendapati diri saya melakukan hal-hal yang saya tidak ingat pernah melakukannya.",
+            "score": 1
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah kamu merasa bahwa orang-orang atau benda di sekitarmu tampak aneh atau tidak seperti nyata?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat aku merasa sangat lelah atau bingung, dunia di sekitarku bisa terasa agak asing."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Orang-orang, benda-benda, atau dunia di sekitar saya tampak aneh atau tidak nyata.",
+            "score": 1
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah merasa seperti melihat dunia melalui kabut, sehingga semuanya tampak jauh atau tidak jelas?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, terutama saat suasana hatiku sedang buruk atau aku merasa tertekan, semuanya bisa terasa kabur dan jauh."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya merasa seolah-olah saya sedang melihat melalui kabut sehingga orang-orang dan benda-benda tampak jauh atau tidak jelas.",
+            "score": 1
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa bertindak sangat berbeda di situasi yang berbeda, sampai terasa seperti dua orang yang berbeda?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang aku merasa harus menyesuaikan diri dengan lingkungan, tapi nggak sampai merasa seperti dua orang berbeda."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya bertindak sangat berbeda dari satu situasi ke situasi lainnya sehingga seolah-olah saya adalah dua orang yang berbeda.",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Ketika kamu sedang sendirian, apakah kamu pernah berbicara dengan suara keras pada dirimu sendiri?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, kadang aku ngobrol sendiri, itu membantu untuk memahami pikiranku dan menenangkan diri."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Ketika sedang sendirian, saya berbicara dengan bersuara pada diri saya sendiri.",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa bisa dengan mudah melakukan hal-hal yang biasanya sulit untukmu?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang iya, terutama saat aku sedang fokus atau dalam suasana hati yang baik, hal-hal yang biasanya sulit terasa lebih mudah."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya dengan mudah melakukan hal-hal yang biasanya sulit bagi saya.",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terakhir di bagian ini, apakah kamu merasa mampu mengabaikan rasa sakit fisik?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang aku bisa mengabaikannya, terutama jika aku sedang fokus pada sesuatu yang penting atau sedang sibuk."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Dissociation",
+            "survey_question": "Saya mampu mengabaikan rasa sakit.",
+            "score": 1
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah terbuka tentang itu. Sekarang, mari kita bicarakan sedikit tentang penggunaan zat. Apakah kamu pernah menggunakan obat penghilang rasa sakit seperti Vicodin?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah menggunakan obat tersebut."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan penghilang rasa sakit (cont: Vicodin).",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Bagaimana dengan stimulan seperti Ritalin atau Adderall? Apakah kamu pernah menggunakannya?"
+      },
+      {
+        "role": "user",
+        "content": "Aku juga tidak pernah menggunakan stimulan tersebut."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan stimulan (cont: Ritalin, Adderall).",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah menggunakan obat penenang atau obat tidur seperti Valium?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah menggunakan obat tidur atau penenang."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan obat bius atau penenang (cont: obat tidur atau Valium)",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah menggunakan obat untuk kesenangan seperti ekstasi?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah menggunakan obat semacam itu."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan obat untuk kesenangan (cont: ekstasi).",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Bagaimana dengan metamfetamin? Apakah kamu pernah menggunakannya?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan metamfetamin.",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah menggunakan ganja?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah menggunakan ganja."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan ganja.",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Bagaimana dengan kokain? Apakah kamu pernah mencoba?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan kokain.",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah menggunakan heroin?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah menggunakan heroin."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan heroin",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu pernah menggunakan halusinogen seperti LSD?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, aku tidak pernah mencoba halusinogen."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan halusinogen (cont: LSD).",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terakhir, apakah kamu pernah menggunakan inhalants atau solvents seperti lem?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Substance Use",
+            "survey_question": "Saya menggunakan inhalants atau solvents (cont: lem).",
+            "score": 0
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih banyak, Dewi, atas keterbukaan dan kejujuranmu sepanjang percakapan ini. Bagaimana perasaanmu setelah membicarakan semua ini?"
+      },
+      {
+        "role": "user",
+        "content": "Aku merasa lega bisa membicarakannya secara terbuka dan terstruktur seperti ini."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": {
+            "section": "Ending",
+            "survey_question": "Apakah kamu merasa lega setelah sesi ini?",
+            "score": 5
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dialog_id": 3,
+    "name": "Budi Santoso",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Budi, terima kasih sudah kembali. Saya tahu kita sudah mulai membahas topik yang cukup berat sebelumnya, dan saya sangat menghargai keterbukaanmu. Kali ini, kita akan melanjutkan dengan bagian kedua dari sesi kita. Saya akan mulai dengan beberapa pertanyaan tentang suasana hatimu belakangan ini. Apakah kamu merasa mudah tersinggung atau marah dalam beberapa minggu terakhir?"
+      }
+    ]
+  },
+  {
+    "dialog_id": 4,
+    "name": "Maya Sari",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Maya, terima kasih sudah kembali. Hari ini kita akan melanjutkan dari bagian \"Mania\". Saya ingin bertanya tentang beberapa perubahan suasana hati dan perilaku yang mungkin kamu alami. Yuk, kita mulai dengan pertanyaan pertama."
+      },
+      {
+        "role": "assistant",
+        "content": "Dalam beberapa waktu terakhir, apakah kamu merasa lebih percaya diri dari biasanya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, saya merasa lebih percaya diri, terutama saat sedang sangat terinspirasi untuk berkarya."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "parameters": {
+            "section": "Mania",
+            "survey_question": "Saya merasa lebih percaya diri dari biasanya.",
+            "score": 3
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa lebih aktif dari biasanya dalam beberapa hari terakhir?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, beberapa hari terakhir saya merasa semangat terus, seperti punya energi lebih untuk melakukan banyak hal sekaligus."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "parameters": {
+            "section": "Mania",
+            "survey_question": "Saya lebih aktif dari biasanya.",
+            "score": 4
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa kebutuhan tidurmu berkurang, tapi tetap merasa bertenaga?"
+      },
+      {
+        "role": "user",
+        "content": "Jarang sih, tapi kadang kalau lagi semangat banget, saya tidur lebih sedikit tapi tetap merasa cukup energi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "parameters": {
+            "section": "Mania",
+            "survey_question": "Saya membutuhkan tidur lebih sedikit dari biasanya.",
+            "score": 2
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa akhir-akhir ini lebih banyak bicara dari biasanya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat diskusi kelompok atau curhat sama teman, saya jadi lebih banyak ngomong dari biasanya."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "parameters": {
+            "section": "Mania",
+            "survey_question": "Saya berbicara lebih dari biasanya.",
+            "score": 3
+          }
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa lebih bahagia atau lebih ceria dari biasanya dalam beberapa waktu terakhir?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, sering merasa lebih ceria, terutama saat bisa mengekspresikan diri lewat seni atau ngobrolin hal-hal emosional."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "parameters": {
+            "section": "Mania",
+            "survey_question": "Saya merasa lebih bahagia atau lebih ceria dari biasanya.",
+            "score": 4
+          }
+        }
+      }
+    ]
+  },
+  {
+    "dialog_id": 5,
+    "name": "Fajar Nugroho",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Fajar, terima kasih sudah meluangkan waktu hari ini. Sebelum kita mulai, saya ingin memastikan kamu merasa nyaman dan tahu bahwa semua yang kita bicarakan akan tetap pribadi. Apakah kamu siap untuk mulai?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, saya siap."
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih. Mari kita mulai dengan beberapa pertanyaan tentang bagaimana perasaanmu akhir-akhir ini. Dalam dua minggu terakhir, apakah kamu sering merasa tidak berguna?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang saya merasa seperti itu, terutama saat saya gagal memahami materi kuliah."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa tidak berguna\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah berbagi. Bagaimana dengan perasaan tidak berdaya? Apakah itu juga sering kamu rasakan?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat menghadapi masalah yang terasa terlalu besar untuk saya atasi sendiri."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa tidak berdaya\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Aku menghargai keterbukaanmu. Apakah kamu merasa sedih cukup sering belakangan ini?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, kadang perasaan sedih itu muncul tanpa sebab yang jelas."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa sedih\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Saat kamu merasa seperti gagal, apakah perasaan itu sering muncul?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama kalau saya membandingkan diri dengan teman-teman yang kelihatan lebih sukses."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa seperti seorang yang gagal\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah jujur. Apakah kamu merasa tertekan akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, sering merasa tertekan karena banyak tugas dan ekspektasi yang harus dipenuhi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa tertekan\",\"score\":4}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa tidak bahagia meskipun tidak ada masalah besar yang sedang terjadi?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, ada hari-hari di mana saya merasa kosong dan tidak benar-benar bahagia."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa tidak bahagia\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Saat menghadapi masa sulit, apakah kamu pernah merasa putus asa?"
+      },
+      {
+        "role": "user",
+        "content": "Jarang, tapi ada kalanya harapan terasa hilang untuk sementara."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa putus asa\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa kamu punya sesuatu yang bisa diharapkan di masa depan?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang saya merasa bingung tentang masa depan, tapi saya tetap mencoba untuk berharap."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Depression\",\"survey_question\":\"Saya merasa tidak memiliki apa-apa untuk diharapkan\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Fajar, terima kasih sudah berbagi sejauh ini. Aku ingin menanyakan beberapa hal tentang pengalamanmu terkait perasaan tidak nyata atau seperti terlepas dari diri sendiri. Apakah kamu pernah merasa seperti sedang melamun dan tidak memikirkan apa pun?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, kadang saya sadar tiba-tiba sedang melamun dan nggak fokus ke apa yang sedang terjadi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya mendapati diri saya melamun dan tidak memikirkan apa pun.\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah kamu melakukan sesuatu tapi kemudian tidak ingat pernah melakukannya?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya biasanya cukup sadar dengan apa yang saya lakukan."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya mendapati diri saya melakukan hal-hal yang saya tidak ingat pernah melakukannya.\",\"score\":0}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Bagaimana dengan dunia di sekitarmu? Apakah pernah terasa aneh atau tidak nyata?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat saya merasa tertekan atau bingung."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Orang-orang, benda-benda, atau dunia di sekitar saya tampak aneh atau tidak nyata.\",\"score\":1}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernah merasa seperti sedang melihat dunia melalui kabut, jadi semuanya tampak jauh atau tidak jelas?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, kadang saya merasa seperti itu, terutama saat sedang stres."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya merasa seolah-olah saya sedang melihat melalui kabut sehingga orang-orang dan benda-benda tampak jauh atau tidak jelas.\",\"score\":1}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa perilakumu bisa sangat berbeda tergantung situasinya, sampai terasa seperti dua orang yang berbeda?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya merasa cukup konsisten dengan diri saya sendiri."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya bertindak sangat berbeda dari satu situasi ke situasi lainnya sehingga seolah-olah saya adalah dua orang yang berbeda.\",\"score\":0}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Saat sedang sendiri, apakah kamu pernah berbicara dengan diri sendiri secara bersuara?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, itu membantu saya memproses pikiran."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Ketika sedang sendirian, saya berbicara dengan bersuara pada diri saya sendiri.\",\"score\":1}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah kamu merasa bisa melakukan hal-hal yang biasanya sulit dengan mudah, seolah-olah kamu sedang dalam kondisi berbeda?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat saya berada di bawah tekanan."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya dengan mudah melakukan hal-hal yang biasanya sulit bagi saya.\",\"score\":1}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terakhir di bagian ini, apakah kamu merasa mampu mengabaikan rasa sakit fisik?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, saya bisa menahan rasa sakit jika sedang fokus pada sesuatu."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Dissociation\",\"survey_question\":\"Saya mampu mengabaikan rasa sakit.\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Sekarang, Fajar, mari kita bicarakan tentang pola tidurmu. Apakah kamu merasa tidurmu tidak nyenyak akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, saya merasa sering terbangun di malam hari."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"tidur saya tidak nyenyak\",\"score\":4}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa tidurmu memuaskan?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak terlalu, saya sering merasa kurang istirahat."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"tidur saya memuaskan\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah tidurmu terasa menyegarkan saat bangun pagi?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya sering merasa lelah meskipun sudah tidur."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"tidur saya menyegarkan\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu mengalami kesulitan saat mencoba untuk tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, pikiran saya sering terus berjalan ketika mencoba tidur."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"saya mengalami kesulitan tidur\",\"score\":4}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu sering terbangun di tengah malam dan sulit untuk kembali tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, itu sering terjadi."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"saya memiliki masalah untuk tetap tidur\",\"score\":4}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Secara umum, apakah kamu merasa memiliki masalah tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Bisa dibilang begitu, tidur saya tidak terlalu konsisten."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"saya memiliki masalah tidur\",\"score\":3}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa tidurmu sudah cukup?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak terlalu, saya merasa kurang istirahat."
+      },
+      {
+        "role": "assistant",
+        "function_call": {
+          "name": "score_response",
+          "arguments": "{\"section\":\"Sleep Disturbance\",\"survey_question\":\"saya merasa tidur dengan cukup\",\"score\":2}"
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Fajar, kamu sudah sangat terbuka dan jujur dalam menjawab. Sebelum kita akhiri, apakah ada hal lain yang ingin kamu bagikan atau tanyakan?"
+      },
+      {
+        "role": "user",
+        "content": "Terima kasih. Sejauh ini saya merasa cukup lega setelah berbicara tentang ini."
+      },
+      {
+        "role": "assistant",
+        "content": "Sama-sama, Fajar. Jika kamu merasa butuh tempat bercerita lagi atau ingin berdiskusi lebih dalam, aku selalu siap membantu."
+      }
+    ]
+  },
+  {
+    "dialog_id": 6,
+    "name": "Sinta Wulandari",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Hai Sinta, aku ingin memulai dengan memahami bagaimana perasaanmu akhir-akhir ini. Apakah kamu sering merasa jengkel, marah, kesal, atau terganggu? Jawabannya akan membantu kita memahami pola emosimu."
+      }
+    ]
+  },
+  {
+    "dialog_id": 7,
+    "name": "Arief Setiawan",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Arief, terima kasih sudah meluangkan waktu untuk berdiskusi hari ini. Saya ingin memahami lebih dalam tentang pengalaman emosional dan perilaku Anda, agar kita bisa mendapatkan gambaran yang lebih jelas. Kita akan mulai dengan beberapa pertanyaan ringan, oke?"
+      },
+      {
+        "role": "assistant",
+        "content": "Saat akhir-akhir ini Anda merasa sangat semangat atau penuh energi, apakah Anda juga merasa lebih percaya diri dari biasanya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang saya merasa lebih percaya diri, terutama saat sedang fokus belajar atau mengerjakan tugas."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Mania",
+          "survey_question": "Saya merasa lebih percaya diri dari biasanya.",
+          "score": 3
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Selain itu, apakah Anda merasa lebih aktif dari biasanya, seperti ingin terus bergerak atau melakukan banyak hal sekaligus?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang juga, terutama saat banyak tugas atau deadline, saya jadi terdorong untuk terus bekerja."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Mania",
+          "survey_question": "Saya lebih aktif dari biasanya.",
+          "score": 3
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Saat periode seperti itu, apakah Anda merasa kebutuhan tidur Anda berkurang tapi tetap merasa bertenaga?"
+      },
+      {
+        "role": "user",
+        "content": "Jarang sih, biasanya kalau kurang tidur saya malah cepat lelah."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Mania",
+          "survey_question": "Saya membutuhkan tidur lebih sedikit dari biasanya.",
+          "score": 2
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Ketika Anda sedang penuh semangat itu, apakah Anda cenderung berbicara lebih banyak dari biasanya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang iya, terutama kalau topiknya menarik atau saat diskusi kelompok."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Mania",
+          "survey_question": "Saya berbicara lebih dari biasanya.",
+          "score": 3
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Di saat yang sama, apakah Anda juga merasa lebih bahagia atau ceria dari biasanya tanpa alasan yang jelas?"
+      },
+      {
+        "role": "user",
+        "content": "Sering juga, kadang rasanya semangat itu datang tiba-tiba, meski sedang nggak ada yang spesial."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Mania",
+          "survey_question": "Saya merasa lebih bahagia atau lebih ceria dari biasanya.",
+          "score": 4
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah terbuka sejauh ini, Arief. Sekarang saya ingin bertanya tentang pengalaman Anda dengan pikiran dan persepsi. Pernahkah Anda merasa seperti orang lain bisa membaca pikiran Anda, atau Anda bisa membaca pikiran orang lain?"
+      },
+      {
+        "role": "user",
+        "content": "Pernah sih, terutama saat saya sedang sangat fokus atau tertekan, kadang merasa seperti pikiran saya nggak sepenuhnya milik saya."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya berpikir bahwa ada kemungkinan orang lain dapat membaca pikiran saya, atau saya bisa membaca pikiran orang lain",
+          "score": 4
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda juga pernah merasa seperti sedang dipermainkan oleh pikiran Anda sendiri?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat pikiran saya berputar terus tanpa henti dan sulit dikendalikan."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya merasa sedang dipermainkan oleh pikiran saya sendiri",
+          "score": 4
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah Anda mendengar pikiran Anda sendiri diucapkan dengan lantang, seperti suara dari luar?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah sih, saya nggak mengalami hal itu."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya mendengar pikiran saya sendiri diucapkan dengan lantang",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda pernah melakukan sesuatu yang tidak biasa karena meyakini hal-hal supranatural?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah, saya cenderung berpikir secara rasional dan logis."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya pernah melakukan sesuatu yang tidak biasa dilakukan orang lain karena keyakinan saya akan hal-hal supranatural",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda percaya memiliki kemampuan alami atau supernatural yang istimewa?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya tidak percaya memiliki kemampuan seperti itu."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya percaya bahwa saya mempunyai kemampuan alami atau supernatural yang istimewa melebihi bakat dan kekuatan bawaan saya",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah Anda merasa ada hal-hal aneh terjadi yang tidak bisa Anda jelaskan?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang ada perasaan aneh atau seperti deja vu, tapi saya biasanya mengabaikannya."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya merasa ada hal-hal aneh atau tidak biasa yang terjadi yang tidak dapat saya jelaskan",
+          "score": 3
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda pernah merasa ada sesuatu yang mengganggu atau mengendalikan pikiran atau tindakan Anda?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah, saya merasa tetap bisa mengendalikan pikiran dan tindakan saya."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya mungkin merasa ada sesuatu yang mengganggu atau mengendalikan pikiran, perasaan, atau tindakan saya",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah Anda merasa bingung membedakan apakah suatu pengalaman itu nyata atau hanya mimpi atau imajinasi?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat saya sedang lelah atau banyak pikiran."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya kadang-kadang bingung apakah sesuatu yang saya alami atau rasakan mungkin adalah hal yang nyata atau mungkin hanya bagian dari imajinasi atau mimpi saya",
+          "score": 2
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda merasa bisa memprediksi masa depan?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya tidak pernah merasa seperti itu."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya mungkin bisa memprediksi masa depan",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda pernah merasa khawatir akan kehilangan kendali dan menjadi \"gila\"?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya tidak pernah merasa seperti itu."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya khawatir bahwa saya akan menjadi \"gila\u201d",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Pernahkah Anda merasa orang lain mungkin berencana menyakiti Anda?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah, saya merasa aman dalam lingkungan sosial saya."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya bertanya-tanya apakah orang lain mungkin berencana untuk menyakiti saya atau bahkan mungkin akan menyakiti saya",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda pernah mendengar suara-suara saat tidak ada orang di sekitar?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak pernah sama sekali."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Psychosis",
+          "survey_question": "Saya pernah mendengar suara samar-samar (atau jelas) bergumam atau berbicara, ketika tidak ada orang di dekat saya",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah menceritakan hal-hal tersebut, Arief. Sekarang, mari kita bicarakan tentang pikiran dan perilaku yang mungkin terasa berulang. Menurut Anda, seberapa mengganggu pikiran atau perilaku berulang ini dalam kehidupan sehari-hari?"
+      },
+      {
+        "role": "user",
+        "content": "Sejauh ini, saya rasa masih bisa dikendalikan dan tidak terlalu mengganggu aktivitas sehari-hari."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Repetitive Thought",
+          "survey_question": "Seberapa parahkah perilaku atau pikiran ini mengganggu Anda?",
+          "score": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah Anda merasa sulit untuk mengontrol pikiran atau perilaku tersebut saat muncul?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang sedikit sulit, tapi saya biasanya bisa mengalihkan perhatian."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Repetitive Thought",
+          "survey_question": "Bagi Anda, seberapa sulit untuk mengontrol pikiran atau perilaku tersebut?",
+          "score": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah pikiran atau perilaku ini membuat Anda menghindari situasi atau orang tertentu?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak, saya tetap bisa berinteraksi dan menjalani rutinitas seperti biasa."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Repetitive Thought",
+          "survey_question": "Seberapa sering pikiran dan perilaku ini membuat Anda menghindari untuk melakukan hal tertentu, mengunjungi tempat atau bersama orang tertentu?",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah pikiran atau perilaku ini memengaruhi studi, pekerjaan, atau hubungan sosial Anda?"
+      },
+      {
+        "role": "user",
+        "content": "Sejauh ini tidak, saya masih bisa menjalankan semua tanggung jawab dan hubungan sosial dengan baik."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Repetitive Thought",
+          "survey_question": "Seberapa sering pikiran atau perilaku ini mempengaruhi sekolah, pekerjaan, hubungan sosial dan kehidupan keluarga?",
+          "score": 0
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Secara rata-rata, berapa jam dalam sehari Anda merasa mengalami pikiran atau perilaku berulang ini?"
+      },
+      {
+        "role": "user",
+        "content": "Mungkin sekitar 1 jam per hari, dan itu pun masih bisa saya kendalikan."
+      },
+      {
+        "role": "function",
+        "name": "score_response",
+        "content": {
+          "section": "Repetitive Thought",
+          "survey_question": "Tiap harinya rata-rata (dalam hitungan jam) seberapa sering Anda mengalami perilaku atau pikiran tersebut?",
+          "score": 1
+        }
+      },
+      {
+        "role": "assistant",
+        "content": "Arief, dari semua yang kita bicarakan hari ini, Anda tampaknya memiliki wawasan yang cukup baik tentang diri Anda dan bagaimana emosi serta pikiran Anda berperilaku. Apakah Anda merasa percakapan ini membantu Anda memahami diri Anda sedikit lebih baik?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, saya merasa lebih paham tentang beberapa pola pikir dan emosi yang saya alami. Terima kasih sudah menemani dan membantu saya merenung dengan cara yang tenang dan terbuka."
+      },
+      {
+        "role": "assistant",
+        "content": "Sama-sama, Arief. Jika suatu saat Anda ingin berdiskusi lagi atau butuh tempat untuk bercerita, saya selalu siap mendengarkan."
+      }
+    ]
+  },
+  {
+    "dialog_id": 8,
+    "name": "Nina Kurniasari",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Nina, senang bisa berdiskusi denganmu hari ini. Untuk memulai, aku ingin menanyakan beberapa hal terkait kesehatan fisikmu. Apakah belakangan ini kamu sering merasa sakit di bagian perut, punggung, lengan, kaki, sendi, dada, atau mengalami masalah saat berhubungan seksual?"
+      }
+    ]
+  },
+  {
+    "dialog_id": 9,
+    "name": "Rizal Ramadhan",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Rizal, saya mengerti bahwa kamu sering merenungkan makna kebebasan dan tanggung jawab dalam konteks emosi, dan kamu percaya bahwa pemahaman diri bisa membawa kehidupan yang lebih autentik. Saya ingin memulai dengan beberapa pertanyaan ringan untuk memahami perasaanmu belakangan ini. Apakah kamu merasa sedih atau tertekan akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang saya merasa sedih dan tertekan, seperti beban yang tak terlihat tapi terasa berat."
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah berbagi. Apakah kamu juga merasa tidak berguna atau seperti gagal dalam beberapa aspek hidupmu?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang, terutama saat saya membandingkan diri dengan orang lain, saya merasa seperti tidak cukup baik."
+      },
+      {
+        "role": "assistant",
+        "content": "Itu perasaan yang cukup umum, tapi tetap berat. Apakah kamu merasa tidak berdaya atau sulit mengendalikan situasi dalam hidupmu?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang iya, terutama saat menghadapi masalah yang tidak bisa saya kontrol."
+      },
+      {
+        "role": "assistant",
+        "content": "Rizal, apakah akhir-akhir ini kamu merasa tidak bahagia atau putus asa meskipun sudah mencoba menjalani hari seperti biasa?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang saya merasa tidak bahagia, tapi saya berusaha untuk tetap menjalani hari."
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah jujur. Apakah kamu merasa tertekan atau terjebak dalam pikiran yang terus berulang?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang-kadang terasa seperti pikiran itu terus berputar tanpa henti."
+      },
+      {
+        "role": "assistant",
+        "content": "Rizal, apakah kamu merasa tidak memiliki sesuatu yang bisa kamu harapkan di masa depan?"
+      },
+      {
+        "role": "user",
+        "content": "Terkadang saya merasa bingung tentang masa depan, tapi saya tetap mencoba menemukan harapan."
+      },
+      {
+        "role": "assistant",
+        "content": "Sekarang, mari kita bicarakan tentang pola tidurmu. Apakah kamu merasa tidurmu nyenyak dan menyegarkan akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Tidak terlalu nyenyak, sering terbangun di tengah malam."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu sering mengalami kesulitan saat mencoba tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, kadang sulit untuk langsung tertidur."
+      },
+      {
+        "role": "assistant",
+        "content": "Saat terbangun di malam hari, apakah kamu merasa sulit untuk kembali tidur?"
+      },
+      {
+        "role": "user",
+        "content": "Seringnya iya, saya jadi gelisah dan pikiran mulai berlari."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa masalah tidur ini cukup sering terjadi?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, hampir setiap malam terasa seperti itu."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa bahwa kamu tidak tidur dengan cukup?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, sering merasa kurang tidur."
+      },
+      {
+        "role": "assistant",
+        "content": "Baik, sekarang mari kita bahas tentang ingatanmu. Apakah kamu merasa ada sesuatu yang sangat salah dengan ingatanmu akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang saya merasa seperti lupa hal-hal kecil yang biasanya tidak saya lupa."
+      },
+      {
+        "role": "assistant",
+        "content": "Ketika kamu lupa sesuatu, apakah kamu merasa takut itu bisa menjadi masalah ingatan yang serius, seperti Alzheimer?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang saya merasa khawatir, meskipun saya tahu itu mungkin hanya lupa biasa."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa ingatanmu lebih buruk dibandingkan orang seusiamu?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang terasa seperti itu, terutama saat saya sulit mengingat hal-hal penting."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa tidak bahagia ketika memikirkan tentang daya ingatmu?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, kadang ingatan yang menurun membuat saya merasa frustrasi."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu khawatir orang lain menyadari bahwa ingatanmu tidak begitu bagus?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang saya merasa malu dan berusaha menyembunyikannya."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa jengkel atau kesal pada diri sendiri ketika kamu lupa sesuatu?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, saya sering merasa kesal pada diri sendiri."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa senang secara umum dengan daya ingatanmu?"
+      },
+      {
+        "role": "user",
+        "content": "Saya merasa ragu-ragu, kadang senang, kadang kecewa."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu percaya diri dengan kemampuanmu dalam mengingat sesuatu?"
+      },
+      {
+        "role": "user",
+        "content": "Terkadang ya, tapi ada saatnya saya merasa kurang percaya diri."
+      },
+      {
+        "role": "assistant",
+        "content": "Ketika kamu mengalami masalah dalam mengingat sesuatu, apakah kamu bisa memaklumi itu?"
+      },
+      {
+        "role": "user",
+        "content": "Saya berusaha memaklumi, tapi tetap ada rasa tidak nyaman."
+      },
+      {
+        "role": "assistant",
+        "content": "Secara umum, apakah kamu merasa puas dengan daya ingatmu?"
+      },
+      {
+        "role": "user",
+        "content": "Saya merasa agak puas, tapi ada keraguan juga."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa kesal ketika memiliki masalah dalam mengingat sesuatu?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, kadang merasa kesal dan kecewa."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu merasa bahwa daya ingatmu menurun akhir-akhir ini?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, saya merasa ada penurunan."
+      },
+      {
+        "role": "assistant",
+        "content": "Menurutmu, apakah daya ingatmu baik untuk usia kamu saat ini?"
+      },
+      {
+        "role": "user",
+        "content": "Saya rasa tidak sebaik yang saya harapkan."
+      },
+      {
+        "role": "assistant",
+        "content": "Kalau ada sesuatu yang penting, apakah kamu biasanya bisa mengingatnya?"
+      },
+      {
+        "role": "user",
+        "content": "Kadang bisa, kadang tidak."
+      },
+      {
+        "role": "assistant",
+        "content": "Apakah kamu khawatir akan melupakan sesuatu yang penting?"
+      },
+      {
+        "role": "user",
+        "content": "Iya, saya sering merasa khawatir."
+      },
+      {
+        "role": "assistant",
+        "content": "Terima kasih sudah berbagi, Rizal. Dari percakapan ini, terlihat bahwa kamu sedang mengalami beberapa tantangan emosional dan kognitif yang cukup signifikan. Apakah kamu sudah pernah mencoba berbicara dengan seseorang sebelumnya atau mencoba metode tertentu untuk membantu mengelola perasaan ini?"
+      },
+      {
+        "role": "user",
+        "content": "Belum, sebenarnya saya belum pernah mencari bantuan profesional."
+      },
+      {
+        "role": "assistant",
+        "content": "Rizal, berdasarkan jawabanmu, kamu mengalami gejala yang cukup berat dan saya sangat menyarankan untuk segera bertemu dengan psikolog atau psikiater. Apakah kamu merasa nyaman jika saya lanjutkan untuk memberikan rujukan atau bantuan lebih lanjut?"
+      },
+      {
+        "role": "user",
+        "content": "Ya, saya rasa itu langkah yang bijak. Terima kasih."
+      }
+    ]
+  },
+  {
+    "dialog_id": 10,
+    "name": "Lia Farhana",
+    "messages": [
+      {
+        "role": "assistant",
+        "content": "Halo Lia, terima kasih sudah meluangkan waktu hari ini. Saya ingin memulai dengan beberapa pertanyaan ringan untuk mengenal suasana hati kamu belakangan ini. Apakah kamu merasa lebih mudah marah atau tersinggung akhir-akhir ini?"
+      }
+    ]
+  }
+]
