@@ -6,27 +6,21 @@ chat_item_collection = db['chat_items']
 chat_collection = db['chats']
 
 class ChatItem:
-    def __init__(self, section, question=None, score=None, dialog_id=None, _id=None, question_key=None, generated_response=None, user_answer=None):
+    def __init__(self, type, ai_response=None, chat_id=None, _id=None, user_answer=None):
         self._id = _id or ObjectId()
-        self.section = section
-        self.generated_response = generated_response
+        self.type = type
         self.user_answer = user_answer
-        self.question = question
-        self.question_key = question_key
-        self.score = score
-        self.dialog_id = dialog_id
+        self.ai_response = ai_response
+        self.chat_id = chat_id
         self.created_at = datetime.utcnow()
 
     def to_dict(self):
         return {
             "_id": self._id,
-            "section": self.section,
-            "question": self.question,
-            "generated_response": self.generated_response,
-            "score": self.score,
+            "type": self.type,
+            "ai_response": self.ai_response,
             "user_answer": self.user_answer,
-            "dialog_id": self.dialog_id,
-            "question_key": self.question_key,
+            "chat_id": self.chat_id,
             "created_at": self.created_at
         }
 
@@ -38,13 +32,27 @@ class ChatItem:
         data = chat_item_collection.find_one(query)
         if data:
             return cls(
-                section=data['section'],
-                question=data.get('question'),
-                question_key=data.get('question_key'),
-                score=data.get('score'),
-                dialog_id=data.get('dialog_id'),
                 _id=data.get('_id'),
-                generated_response=data.get('generated_response'),
+                type=data['type'],
+                ai_response=data.get('ai_response'),
+                chat_id=data.get('chat_id'),
                 user_answer=data.get('user_answer')
             )
         return None
+    
+    def get_latest_item(chat_id):
+        data = chat_item_collection.find_one(
+            {"chat_id": chat_id},
+            sort=[("created_at", -1)]
+        )
+
+        if not data:
+            return None
+
+        return ChatItem(
+            _id=data.get('_id'),
+            type=data['type'],
+            ai_response=data.get('ai_response'),
+            chat_id=data.get('chat_id'),
+            user_answer=data.get('user_answer')
+        )

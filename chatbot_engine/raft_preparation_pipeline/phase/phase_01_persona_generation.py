@@ -6,6 +6,7 @@ class PhaseOnePersonaGeneration:
 
     def __init__(self, api_key, model="gpt-4o"):
         self.gpt_client = GPTClient(api_key, model)
+        self.logger = logging.getLogger("PhaseOnePersonaGeneration")
         return
     
     def run(self, grouped_questions):

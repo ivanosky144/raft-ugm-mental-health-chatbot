@@ -36,4 +36,10 @@ class AuthService:
         }
 
         token = jwt.encode(payload, secret_key, algorithm="HS256")
-        return token, None
+
+        data = {
+            "user_id": str(user._id),
+            "token": token,
+        }
+        
+        return data, None

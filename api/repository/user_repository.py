@@ -11,3 +11,7 @@ class UserRepository:
         user = User(username=username, email=email, password=hashed_password, role=role)
         user.save()
         return user
+    
+    @staticmethod
+    def get_all_users():
+        return User.find_all()

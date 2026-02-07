@@ -27,8 +27,8 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
         const result = await response.json();
 
         if (response.ok) {
-            // Store the token in localStorage
-            localStorage.setItem('access_token', result.token);
+            localStorage.setItem('access_token', result.data.token);
+            localStorage.setItem('user_id', result.data.user_id);
             
             showMessage("Login berhasil! Mengalihkan...", "green");
             
@@ -41,6 +41,7 @@ document.getElementById('login-form').addEventListener('submit', async (e) => {
             submitBtn.innerText = "Masuk";
         }
     } catch (error) {
+        console.log("There is an error: ", error);
         showMessage("Terjadi kesalahan koneksi", "red");
         submitBtn.disabled = false;
         submitBtn.innerText = "Masuk";

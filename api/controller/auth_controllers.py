@@ -39,12 +39,12 @@ class AuthController:
         if not email or not password:
             return jsonify({"message": "Email and password are required"}), 400
 
-        token, error = AuthService.login(email, password, SECRET_KEY)
+        data, error = AuthService.login(email, password, SECRET_KEY)
 
         if error:
             return jsonify({"message": error}), 401
 
         return jsonify({
             "message": "Login successful",
-            "token": token
+            "data": data
         }), 200

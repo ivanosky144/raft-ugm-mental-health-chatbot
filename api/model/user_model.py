@@ -42,3 +42,7 @@ class User:
                 _id=data.get('_id')
             )
         return None
+
+    @classmethod
+    def find_all():
+        return list(users_collection.find())

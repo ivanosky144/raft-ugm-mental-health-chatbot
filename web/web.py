@@ -15,6 +15,10 @@ class WebModule:
         def admin_page():
             return render_template("admin.html")
         
+        @self.blueprint.route("/dashboard/user")
+        def admin_dashboard_user_page():
+            return render_template("dashboard.html")
+        
         @self.blueprint.route("/register")
         def register_page():
             return render_template("register.html")

@@ -110,3 +110,25 @@ body {
         padding: 1.4rem;
     }
 }
+
+.auth-admin-quick {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.auth-admin-quick a {
+    display: inline-block;
+    padding: 8px 14px;
+    border-radius: 8px;
+    background: #1f2937;
+    border: 1px solid #2f3645;
+    color: #93c5fd;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.auth-admin-quick a:hover {
+    background: #2b3446;
+    transform: translateY(-1px);
+}

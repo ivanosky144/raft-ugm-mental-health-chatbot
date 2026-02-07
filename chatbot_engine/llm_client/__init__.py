@@ -28,3 +28,5 @@ class GPTClient:
         except Exception as err:
             logging.error(f"GPTClient: Error while generating response: {err}")
             return None
+        
+    
