@@ -16,7 +16,7 @@ class AuthService:
         hashed = generate_password_hash(password)
 
         try:
-            UserRepository.create_user(username, email, hashed, role)
+            UserRepository.create(username, email, hashed, role)
             return True, "User registered successfully"
         except Exception:
             return False, "Failed to create user"

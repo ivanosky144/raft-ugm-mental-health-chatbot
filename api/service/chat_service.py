@@ -8,7 +8,7 @@ from api.repository.question_score_repository import QuestionScoreRepository
 class ChatService:
     @staticmethod
     def start_new_chat(user_id):
-        chat = ChatRepository.create_chat(
+        chat = ChatRepository.create(
             summary="",
             start_time=datetime.utcnow(),
             end_time=None,
@@ -25,7 +25,7 @@ class ChatService:
         user_answer=None,
         ai_response=None,
     ):
-        chat_item = ChatItemRepository.create_chat_item(
+        chat_item = ChatItemRepository.create(
             user_answer=user_answer,
             ai_response=ai_response,
             type=type,
@@ -41,7 +41,7 @@ class ChatService:
         chat_item_id,
         group_id=None
     ):
-        question_score = QuestionScoreRepository.create_question_score(
+        question_score = QuestionScoreRepository.create(
             section=section,
             original_question=original_question,
             score=score,
